@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './videoItem.module.css';
+import './videoItem.css';
 
 // const VideoItem = (props) => (
 // 	<li>
@@ -16,12 +16,12 @@ import styles from './videoItem.module.css';
 // -> deconstructing
 
 const VideoItem = ({ video: { snippet } }) => (
-	<li className={styles.container}>
-		<div className={styles.video}>
-			<img className={styles.thumbnail} src={snippet.thumbnails.medium.url} alt="video thumbnail" />
-			<div className={styles.metadata}>
-				<p className={styles.title}>{snippet.title}</p>
-				<p className={styles.channel}>{snippet.channelTitle}</p>
+	<li className="container">
+		<div className="video">
+			<img className="thumbnail" src={snippet.thumbnails.medium.url} alt="video thumbnail" />
+			<div className="metadata">
+				<p className="title">{snippet.title}</p>
+				<p className="channel">{snippet.channelTitle}</p>
 			</div>
 		</div>
 	</li>
